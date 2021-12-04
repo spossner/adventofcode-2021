@@ -28,6 +28,8 @@ class Solution:
 
 if __name__ == '__main__':
     script = os.path.splitext(os.path.basename(sys.argv[0]))[0]
+    if '-' in script:
+        script = script.split('-')[0]
     s = Solution()
 
     with open(f'{script}-dev.txt') as f:
