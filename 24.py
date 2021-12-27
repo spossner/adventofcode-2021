@@ -93,8 +93,6 @@ if __name__ == '__main__':
     #             break
 
 
-x
-
     with open(f'{script}{"-dev" if DEV else ""}.txt') as f:
         instr, stack = f.read().strip().splitlines(), []
 
